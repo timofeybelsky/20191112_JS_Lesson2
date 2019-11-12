@@ -1,13 +1,23 @@
 "use strict";
 
-const nOne = prompt("Enter nOne:");
-const nTwo = prompt("Enter nTwo:");
+const firstValue = prompt("Enter firstValue:");
+const secondValue = prompt("Enter secondValue:");
 
-/*
-function circleLength(radius) {
-  return 2 * 3.14 * radius;
+const mark = prompt("Please enter opeartion mark:");
+
+if(mark === '+'){
+  console.log(sumNumbers(firstValue, secondValue));
+}else if(mark === '-'){
+  console.log(minusNumbers(firstValue, secondValue));
+}else if(mark === '*'){
+  console.log(multipeNumbers(firstValue, secondValue));
+}else if(mark === '/'){
+  console.log(divideNumbers(firstValue, secondValue));
+}else{
+  alert("ERROR!!! WTF!!!");
 }
-*/
+
+// ТУТЪ ФУНКЦИИ, БАРИН!
 
 function sumNumbers(numberOne, numberTwo){
   return +numberOne + +numberTwo;
@@ -24,8 +34,3 @@ function multipeNumbers(numberOne, numberTwo){
 function divideNumbers(numberOne, numberTwo){
   return +numberOne / +numberTwo;
 }
-
-console.log(sumNumbers(nOne, nTwo));
-console.log(minusNumbers(nOne, nTwo));
-console.log(multipeNumbers(nOne, nTwo));
-console.log(divideNumbers(nOne, nTwo));
