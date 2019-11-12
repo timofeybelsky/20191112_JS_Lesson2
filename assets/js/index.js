@@ -1,17 +1,22 @@
-const userFirstValue = prompt();
-const userFirstNumber = +userFirstValue;
-
-const userSecondValue = prompt();
-const userSecondNumber = +userSecondValue;
+const userValue = prompt("Please enter number:");
+const userNumber = +userValue;
 
 
+if(Number.isNaN(userNumber)){
 
-if(userFirstNumber > userSecondNumber){
-  alert(userFirstNumber + " is bigger!");
+  alert("Error! Value is not number. :(");
+
 }
-else if(userFirstNumber === userSecondNumber){
-  alert("Values are equal.");
-}
-else {
-  alert(userSecondNumber + " is bigger...");
+else{
+
+  if( userNumber % 5 === 0 && userNumber % 2 === 0 && userNumber % 3 === 0 ){
+
+    alert("Number is kratnoe!!! ^_^");
+
+  }
+  else{
+
+    alert("Oh... number is not kratnoe... O_O");
+
+  }
 }
