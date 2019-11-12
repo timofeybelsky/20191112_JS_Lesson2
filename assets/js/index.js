@@ -1,22 +1,31 @@
-const userValue = prompt("Please enter number:");
-const userNumber = +userValue;
+"use strict";
 
+const nOne = prompt("Enter nOne:");
+const nTwo = prompt("Enter nTwo:");
 
-if(Number.isNaN(userNumber)){
-
-  alert("Error! Value is not number. :(");
-
+/*
+function circleLength(radius) {
+  return 2 * 3.14 * radius;
 }
-else{
+*/
 
-  if( userNumber % 5 === 0 && userNumber % 2 === 0 && userNumber % 3 === 0 ){
-
-    alert("Number is kratnoe!!! ^_^");
-
-  }
-  else{
-
-    alert("Oh... number is not kratnoe... O_O");
-
-  }
+function sumNumbers(numberOne, numberTwo){
+  return +numberOne + +numberTwo;
 }
+
+function minusNumbers(numberOne, numberTwo){
+  return +numberOne - +numberTwo;
+}
+
+function multipeNumbers(numberOne, numberTwo){
+  return +numberOne * +numberTwo;
+}
+
+function divideNumbers(numberOne, numberTwo){
+  return +numberOne / +numberTwo;
+}
+
+console.log(sumNumbers(nOne, nTwo));
+console.log(minusNumbers(nOne, nTwo));
+console.log(multipeNumbers(nOne, nTwo));
+console.log(divideNumbers(nOne, nTwo));
